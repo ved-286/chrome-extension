@@ -1,15 +1,15 @@
 {
     "manifest_version": 3,
     "name": "Timer Extension",
-    "version":"1.0.0",
-    "description": "hello chrome",
-    "icons":{
+    "version": "1.0.0",
+    "description": "A simple timer extension for Chrome.",
+    "icons": {
         "16": "icon.png",
         "48": "icon.png",
         "128": "icon.png"
     },
     "action": {
-        "default_icon":{
+        "default_icon": {
             "16": "icon.png",
             "24": "icon.png",
             "32": "icon.png"
@@ -18,8 +18,8 @@
         "default_popup": "popup.html"
     },
     "options_page": "options.html",
-    "permissions": ["storage","alarms"],
-    "background":{
+    "permissions": ["storage", "alarms"],
+    "background": {
         "service_worker": "background.js"
     }
 }
