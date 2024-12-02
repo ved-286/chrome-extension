@@ -1,5 +1,5 @@
 const TimeElement = document.getElementById("time")
-
+const nameElement = document.getElementById("name")
 const TimerElement = document.getElementById("timer")
 
 function updateTimeElement(){
@@ -15,3 +15,8 @@ function updateTimeElement(){
 }
 
 setInterval(updateTimeElement,1000)
+
+chrome.storage.local.get(["name"],(res)=>{
+    const name = res.name ?? "???"
+    nameElement.textContent = `your name is ${name}`
+})

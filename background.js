@@ -15,7 +15,18 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         chrome.action.setBadgeText({
             text:`${time + 1}`
         })
-    })
-})
+
+        chrome.storage.sync.get(["notificationTime"],(res)=>{
+            const notificationTime = res.notificationTime ?? 1000
+            if(time % notificationTime == 0){
+                this.registration.showNotification("Chrome Timer Extension",{
+                    body: `${notificationTime} seconed has passed`,
+                    icon: "icon.png",
+                })
+             }
+        })
+        
+         })
+        })
     
            
