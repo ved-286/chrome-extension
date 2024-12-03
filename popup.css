@@ -1,4 +1,45 @@
 body{
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
+    margin: none;
+}
+
+#container{
+    background-color: gray;
+    height: 200px;
+}
+
+#back{
+    padding: 4px;
+    box-shadow: inset;
+}
+#title-ext{
+    text-align: center;
+    font-size: medium;
+    background-color: orange;
+
+}
+#time-info{
+    border-radius: 40%;
+    border: 4px black;
+    margin-top: 14px;
+
+}
+#time,#name,#timer{
+    text-align: center;
+
+}
+
+#time{
+    margin-top: 14px;
+}
+#start,#stop,#reset{
+    border-radius: 10%;
+    border: none;
+    color:black;
+    text-align: center;
+}
+#butns{
+    margin: auto;
+    width: 50%;
 }
